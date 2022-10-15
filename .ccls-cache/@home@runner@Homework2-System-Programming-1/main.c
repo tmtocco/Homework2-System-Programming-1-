@@ -15,8 +15,10 @@ int main(int argc, char* argv[]) {
   filePointer = fopen(pathExisting, "w");
   
   if(filePointer == NULL) {
-    printf("Error found within existing path! Exiting program.");
+    printf("Error found within existing path! Exiting program.\n");
     exit(0);
+  } else {
+    
   }
   /*
   if() {
@@ -25,7 +27,7 @@ int main(int argc, char* argv[]) {
   }
   */
   if(offset > 25 || offset < -25) {
-    printf("Error found within offset value! Exiting program.");
+    printf("Error found within offset value! Exiting program.\n");
     exit(0);
   }
   
