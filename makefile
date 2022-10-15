@@ -1,12 +1,13 @@
-output: main.o caesar.o
-	gcc -Wall main.o caesar.o -o a.out -lm
+output: main.o 
+	gcc *.o
 
-main.o: main.c
+main.o: main.c 
 	gcc -c main.c
-
-caesar.o: caesar.c
-	gcc -c caesar.c
+	echo "nothing"
 
 clean:
 	rm *.o
 	rm a.out
+
+easy:
+	./a.out textfile.txt encrypted.txt 25
